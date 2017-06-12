@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animation_Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Yd-vp-2t7" customClass="ShakingTextField" customModule="Animation_Practice" customModuleProvider="target">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Matt-Guest-Photo" translatesAutoresizingMaskIntoConstraints="NO" id="96w-Sc-J7E"/>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.84705882349999995" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="96w-Sc-J7E" firstAttribute="top" secondItem="4Yd-vp-2t7" secondAttribute="bottom" constant="183" id="5Jw-Qs-Nr3"/>
+                            <constraint firstItem="96w-Sc-J7E" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NbI-zC-N6h"/>
+                            <constraint firstItem="96w-Sc-J7E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sch-1w-XpU"/>
+                            <constraint firstItem="4Yd-vp-2t7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="Xl5-eo-zHy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="96w-Sc-J7E" secondAttribute="bottom" constant="266" id="XwE-H9-lg1"/>
+                            <constraint firstItem="4Yd-vp-2t7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="37" id="kyJ-K9-3A4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="96w-Sc-J7E" secondAttribute="trailing" constant="104" id="okZ-AJ-kpd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Yd-vp-2t7" secondAttribute="trailing" constant="38" id="wsP-8g-I7J"/>
+                            <constraint firstItem="96w-Sc-J7E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="104" id="x01-Xk-Bs0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="avatarImage" destination="96w-Sc-J7E" id="bZ1-93-hQT"/>
+                        <outlet property="passwordTextField" destination="4Yd-vp-2t7" id="t2O-Kq-CPN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="135.38230884557723"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Matt-Guest-Photo" width="375" height="375"/>
+    </resources>
+</document>
